@@ -28,7 +28,7 @@
 
   function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
     console.log('statusChangeCallback');
-    console.log(response.authresponse);                   // The current login status of the person.
+    console.log("check",response.authresponse);                   // The current login status of the person.
     if (response.status === 'connected') {   // Logged into your webpage and Facebook.
       testAPI();  
     } else {                                 // Not logged into your webpage or we are unable to tell.
